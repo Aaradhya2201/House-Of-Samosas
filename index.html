@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Samosas — India's Most Addictive Samosa Experience</title>
+    <meta name="description"
+        content="From classic comfort to bold fusion — explore 20+ unique samosa flavors at House of Samosas. Premium gourmet street food experience.">
+    <meta name="keywords"
+        content="samosa, gourmet samosa, pizza samosa, pasta samosa, street food, Indian snacks, fusion samosa">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=4">
+</head>
+
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="logo.png" alt="House of Samosas Logo">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+            <a href="tel:+919211269659" class="nav-cta">Order Now</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero.png" alt="Premium Samosas" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Floating Spice Particles -->
+        <canvas id="spiceParticles" class="spice-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Variety Samosas by Nishatha Snacks
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                India's Most <span class="text-gradient">Addictive</span><br>
+                Samosa Experience
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                From classic comfort to bold fusion — explore flavors you've never imagined.
+            </p>
+            <div class="hero-ctas animate-on-scroll">
+                <a href="#menu" class="btn btn-primary btn-glow">
+                    <span>Explore Menu</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17l9.2-9.2M17 17V7.8H7.8" />
+                    </svg>
+                </a>
+                <a href="#location" class="btn btn-glass">
+                    <span>Visit Us Today</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Unique Flavors</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">₹15</span>
+                    <span class="stat-label">Starting Price</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">4.6</span>
+                    <span class="stat-label">★ Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ========== SIGNATURE EXPERIENCE ========== -->
+    <section class="signature" id="menu">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Signatures</span>
+                <h2 class="section-title">Crafted to <span class="text-gradient">Perfection</span></h2>
+                <p class="section-desc">Each samosa is a flavor journey — meticulously crafted with premium ingredients
+                    and bold imagination.</p>
+            </div>
+            <div class="signature-track" id="signatureTrack">
+                <div class="signature-card animate-on-scroll" data-delay="0">
+                    <div class="card-image-wrap">
+                        <img src="images/pizza-samosa.png" alt="Pizza Samosa" class="card-image">
+                        <div class="card-price">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pizza Samosa</h3>
+                        <p>Stuffed with pizza veggies & toppings — the iconic fusion that started it all.</p>
+                    </div>
+                </div>
+                <div class="signature-card animate-on-scroll" data-delay="100">
+                    <div class="card-image-wrap">
+                        <img src="images/pasta-samosa.png" alt="Pasta Samosa" class="card-image">
+                        <div class="card-price">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pasta Samosa</h3>
+                        <p>Creamy white sauce pasta encased in a golden, crispy shell. Pure comfort.</p>
+                    </div>
+                </div>
+                <div class="signature-card animate-on-scroll" data-delay="200">
+                    <div class="card-image-wrap">
+                        <img src="images/paneer-samosa.png" alt="Paneer Range" class="card-image">
+                        <div class="card-price">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Paneer Collection</h3>
+                        <p>From Tandoori to Kadhai — our paneer range is rich, bold, and irresistible.</p>
+                    </div>
+                </div>
+                <div class="signature-card animate-on-scroll" data-delay="300">
+                    <div class="card-image-wrap">
+                        <img src="images/fusion-samosa.png" alt="Fusion Specials" class="card-image">
+                        <div class="card-price">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fusion Specials</h3>
+                        <p>Manchurian, Mushroom, Masala Corn — bold experiments that redefine samosas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+                <span>Swipe to explore more</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FULL MENU ========== -->
+    <section class="full-menu" id="full-menu">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Complete Menu</span>
+                <h2 class="section-title">Every <span class="text-gradient">Flavor</span>, One Place</h2>
+                <p class="section-desc">Over 20 handcrafted samosa varieties and crispy pakode — something for every
+                    craving.</p>
+            </div>
+            <div class="menu-grid">
+                <!-- Samosa Varieties -->
+                <div class="menu-category animate-on-scroll">
+                    <h3 class="menu-cat-title">
+                        <span class="cat-icon">🔶</span>
+                        Samosa Varieties
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Aloo Samosa</span>
+                                <span class="item-desc">Stuffed potatoes & peas</span>
+                            </div>
+                            <span class="item-price">₹15</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Chowmein Samosa</span>
+                                <span class="item-desc">Stuffed with veg noodles</span>
+                            </div>
+                            <span class="item-price">₹25</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Macaroni Samosa</span>
+                                <span class="item-desc">Stuffed with macaroni & veggies</span>
+                            </div>
+                            <span class="item-price">₹25</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Nutri Samosa</span>
+                                <span class="item-desc">Stuffed with nutri keema & peas</span>
+                            </div>
+                            <span class="item-price">₹25</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Dal Samosa</span>
+                                <span class="item-desc">Stuffed with mild spiced dal</span>
+                            </div>
+                            <span class="item-price">₹25</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fusion Range -->
+                <div class="menu-category animate-on-scroll">
+                    <h3 class="menu-cat-title">
+                        <span class="cat-icon">🍕</span>
+                        Fusion Range
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Pizza Samosa</span>
+                                <span class="item-desc">Stuffed with pizza veggies & toppings</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Pasta Samosa</span>
+                                <span class="item-desc">Stuffed with creamy white sauce pasta</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Cheese Corn Samosa</span>
+                                <span class="item-desc">Stuffed with sweet corn & cheese</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Masala Corn Samosa</span>
+                                <span class="item-desc">Stuffed with sweet corn masala</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Mushroom Samosa</span>
+                                <span class="item-desc">Stuffed with mushrooms</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paneer Range -->
+                <div class="menu-category animate-on-scroll">
+                    <h3 class="menu-cat-title">
+                        <span class="cat-icon">🧀</span>
+                        Paneer Range
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Chilli Paneer Samosa</span>
+                                <span class="item-desc">Stuffed with spicy chilli paneer</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Onion Paneer Samosa</span>
+                                <span class="item-desc">Stuffed with onion paneer</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Kadhai Paneer Samosa</span>
+                                <span class="item-desc">Stuffed with kadhai paneer</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Tandoori Paneer Samosa</span>
+                                <span class="item-desc">Stuffed with tandoori paneer & veggies</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Malai Paneer Samosa</span>
+                                <span class="item-desc">Stuffed with creamy malai paneer</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chaap Range -->
+                <div class="menu-category animate-on-scroll">
+                    <h3 class="menu-cat-title">
+                        <span class="cat-icon">🌶️</span>
+                        Chaap Range
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Malai Chaap Samosa</span>
+                                <span class="item-desc">Stuffed with creamy malai chaap</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Masala Chaap Samosa</span>
+                                <span class="item-desc">Stuffed with spicy chaap masala</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Hariyali Chaap Samosa</span>
+                                <span class="item-desc">Stuffed with hariyali chaap</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Manchurian Samosa</span>
+                                <span class="item-desc">Stuffed with spicy veg Manchurian</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pakode & Snacks -->
+                <div class="menu-category animate-on-scroll">
+                    <h3 class="menu-cat-title">
+                        <span class="cat-icon">🍘</span>
+                        Pakode & Snacks
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Mix Pakode</span>
+                                <span class="item-desc">Assorted pakoda, perfect with chai</span>
+                            </div>
+                            <span class="item-price">₹240/kg</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Bread Pakoda</span>
+                                <span class="item-desc">Bread stuffed with aloo masala</span>
+                            </div>
+                            <span class="item-price">₹15</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Paneer Bread Pakoda</span>
+                                <span class="item-desc">Bread pakoda filled with paneer</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Paneer Pakoda</span>
+                                <span class="item-desc">Soft paneer slices in spiced gram flour</span>
+                            </div>
+                            <span class="item-price">₹30</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Spring Roll</span>
+                                <span class="item-desc">Rolls stuffed with noodles & veggies</span>
+                            </div>
+                            <span class="item-price">₹60</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <span class="item-name">Dahi Ke Sholay</span>
+                                <span class="item-desc">Crispy sholay with creamy hung curd</span>
+                            </div>
+                            <span class="item-price">₹60</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BRAND STORY ========== -->
+    <section class="story" id="story">
+        <div class="section-container">
+            <div class="story-grid">
+                <div class="story-visual animate-on-scroll">
+                    <div class="story-image-stack">
+                        <img src="images/hero.png" alt="House of Samosas Craft" class="story-img story-img-main">
+                        <div class="story-accent-box">
+                            <span class="accent-number">20+</span>
+                            <span class="accent-label">Unique Flavors</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-content animate-on-scroll">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title">Born From a Love for <span class="text-gradient">Street Food</span></h2>
+                    <p class="story-text">
+                        What started as a simple passion for perfecting the humble samosa has grown into something
+                        extraordinary. At House of Samosas, we believe that street food isn't just about taste — it's
+                        about experience, innovation, and the joy of discovering something unexpected.
+                    </p>
+                    <p class="story-text">
+                        Every samosa in our kitchen is a flavor experiment — from the boldness of Pizza Samosa to the
+                        elegance of Malai Paneer. We don't follow recipes; we create experiences. Each bite is crafted
+                        to surprise, delight, and leave you craving more.
+                    </p>
+                    <div class="story-values">
+                        <div class="value-item">
+                            <div class="value-icon">🔥</div>
+                            <div>
+                                <strong>Freshly Made</strong>
+                                <span>Every single day</span>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <div>
+                                <strong>Bold Innovation</strong>
+                                <span>Flavors never imagined</span>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">💎</div>
+                            <div>
+                                <strong>Affordable Luxury</strong>
+                                <span>Premium taste, friendly price</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY WE STAND OUT ========== -->
+    <section class="why-us" id="why-us">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">What Makes Us <span class="text-gradient">Different</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" data-delay="0">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🎨</div>
+                        <div class="feature-glow"></div>
+                    </div>
+                    <h3>20+ Unique Flavors</h3>
+                    <p>From classic Aloo to bold Manchurian — a flavor for every mood and every palate.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="100">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-glow"></div>
+                    </div>
+                    <h3>Fusion Meets Tradition</h3>
+                    <p>We honor tradition while pushing boundaries. Pizza Samosa? That's just the beginning.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="200">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🔥</div>
+                        <div class="feature-glow"></div>
+                    </div>
+                    <h3>Freshly Made Daily</h3>
+                    <p>No freezer, no shortcuts. Every samosa is handcrafted and fried to golden perfection each day.
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="300">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">💰</div>
+                        <div class="feature-glow"></div>
+                    </div>
+                    <h3>Budget-Friendly Luxury</h3>
+                    <p>Premium taste without the premium price tag. Starting at just ₹15, indulgence is always
+                        affordable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section class="reviews" id="reviews">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">What People Say</span>
+                <h2 class="section-title">Loved by <span class="text-gradient">Everyone</span></h2>
+            </div>
+            <div class="rating-badge animate-on-scroll">
+                <span class="rating-stars">★★★★★</span>
+                <span class="rating-number">4.6</span>
+                <span class="rating-label">Based on 500+ reviews</span>
+            </div>
+            <div class="reviews-slider" id="reviewsSlider">
+                <div class="review-card glass-card active">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Addictive taste, unmatched variety. I've tried all 20 flavors and each one
+                        hits different. The Pizza Samosa is out of this world!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">P</div>
+                        <div>
+                            <strong>Priya M.</strong>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card glass-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Best samosas in town, hands down. The Pasta Samosa is pure genius — creamy,
+                        crispy, and absolutely addictive. Can't stop coming back!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">R</div>
+                        <div>
+                            <strong>Rahul K.</strong>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card glass-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Every bite feels premium. At ₹30, you get a gourmet experience that rivals
+                        restaurants charging 10x more. House of Samosas is a game-changer."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <strong>Ananya S.</strong>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card glass-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The Manchurian Samosa blew my mind! Who knew a samosa could taste this
+                        creative? My whole family is obsessed now."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">V</div>
+                        <div>
+                            <strong>Vikram D.</strong>
+                            <span>Family Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" id="prevReview" aria-label="Previous Review">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn" id="nextReview" aria-label="Next Review">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LOCATION ========== -->
+    <section class="location" id="location">
+        <div class="section-container">
+            <div class="location-grid">
+                <div class="location-info animate-on-scroll">
+                    <span class="section-tag">Find Us</span>
+                    <h2 class="section-title">Visit the <span class="text-gradient">House</span></h2>
+                    <p class="location-desc">Come experience the magic of 20+ samosa flavors in person. Freshly made,
+                        ready to devour.</p>
+                    <div class="location-details">
+                        <div class="location-item">
+                            <div class="location-icon">📍</div>
+                            <div>
+                                <strong>Address</strong>
+                                <span>House of Samosas, Beltarodi Rd,<br>Besa Road, Near Kabira Convent,<br>Mohile
+                                    Nagar, Beltarodi, Besa Pipla,<br>Maharashtra 440037</span>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon">🕐</div>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Open Daily: 10:00 AM – 9:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon">📞</div>
+                            <div>
+                                <strong>Phone</strong>
+                                <span><a href="tel:+919211269659" style="color: inherit;">092 1126 9659</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-primary btn-glow"
+                        id="directionsBtn">
+                        <span>Get Directions</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="location-map animate-on-scroll">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.5!2d79.0767785!3d21.0824033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bfa5dae6803b%3A0x2fe4b13d59f39fa!2sHouse%20of%20Samosas!5e0!3m2!1sen!2sin!4v1710000000000"
+                            width="100%" height="100%"
+                            style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(0.8) contrast(1.2);"
+                            allowfullscreen="" loading="lazy" title="House of Samosas Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BLOCK ========== -->
+    <section class="cta-block" id="cta-block">
+        <div class="cta-bg-pattern"></div>
+        <div class="section-container">
+            <div class="cta-content animate-on-scroll">
+                <h2 class="cta-title">Ready to Upgrade Your <span class="text-gradient-light">Snack Game</span>?</h2>
+                <p class="cta-desc">20+ unique flavors waiting to blow your mind. Visit us today or call to order.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+919999999999" class="btn btn-light btn-glow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                        <span>Call Now</span>
+                    </a>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline-light">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span>Get Directions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="House of Samosas" class="footer-logo">
+                    <p class="footer-tagline">Variety Samosas by Nishatha Snacks</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <a href="#menu">Menu</a>
+                        <a href="#story">Our Story</a>
+                        <a href="#reviews">Reviews</a>
+                        <a href="#location">Location</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="tel:+919211269659">Call Us</a>
+                        <a href="https://www.google.com/maps/place/House+of+Samosas/@21.0824033,79.0767785,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd4bfa5dae6803b:0x2fe4b13d59f39fa!8m2!3d21.0823983!4d79.0793534!16s%2Fg%2F11myl5rpr1?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">Directions</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/houseofsamosas.nagpur/" target="_blank" class="social-icon"
+                            aria-label="Instagram">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 House of Samosas. All Rights Reserved. <span class="footer-heart">Made with ❤️</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== MOBILE STICKY CTA ========== -->
+    <div class="mobile-sticky-cta" id="mobileCta">
+        <a href="tel:+919211269659" class="sticky-btn sticky-call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            <span>Call Now</span>
+        </a>
+        <a href="https://www.google.com/maps/place/House+of+Samosas/@21.0824033,79.0767785,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd4bfa5dae6803b:0x2fe4b13d59f39fa!8m2!3d21.0823983!4d79.0793534!16s%2Fg%2F11myl5rpr1?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="sticky-btn sticky-directions">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Directions</span>
+        </a>
+    </div>
+
+    <script src="script.js?v=4"></script>
+</body>
+
+</html>
