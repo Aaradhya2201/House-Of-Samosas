@@ -349,6 +349,10 @@ a {
     transition: var(--transition-fast);
 }
 
+.mobile-only {
+    display: none;
+}
+
 .nav-links a:hover {
     color: var(--gold-light);
 }
@@ -1560,6 +1564,12 @@ a {
     }
 
     .nav-cta {
+        display: inline-flex;
+        padding: 8px 14px;
+        font-size: 0.65rem;
+    }
+
+    .mobile-only {
         display: none;
     }
 
@@ -2136,4 +2146,94 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-dim);
+}
+
+/* ============================================================
+   ORDER MODAL
+   ============================================================ */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--surface);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 40px;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+    transform: translateY(30px) scale(0.95);
+    transition: var(--transition);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0) scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.modal-close:hover {
+    color: var(--text);
+    transform: scale(1.1);
+}
+
+.modal-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--gold-light);
+}
+
+.modal-content p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+.modal-options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+    border: none;
+}
+
+.modal-btn svg {
+    margin-right: -2px;
 }
