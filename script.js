@@ -446,4 +446,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.3 });
 
     sections.forEach(section => sectionObserver.observe(section));
+
+    // ============================================================
+    // 13. ORDER MODAL LOGIC
+    // ============================================================
+    const orderModal = document.getElementById('orderModal');
+    const navOrderBtn = document.getElementById('navOrderBtn');
+    const mobileStickyOrderBtn = document.getElementById('mobileStickyOrderBtn');
+    const closeOrderModal = document.getElementById('closeOrderModal');
+
+    function openModal(e) {
+        e.preventDefault();
+        orderModal.classList.add('active');
+        // Close mobile nav if it's open
+        if (hamburger && hamburger.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+            navbar.classList.remove('menu-active');
+            document.body.style.overflow = '';
+        }
+    }
+
+    if (orderModal) {
+        if (navOrderBtn) navOrderBtn.addEventListener('click', openModal);
+        if (mobileStickyOrderBtn) mobileStickyOrderBtn.addEventListener('click', openModal);
+
+        closeOrderModal.addEventListener('click', () => {
+            orderModal.classList.remove('active');
+        });
+
+        orderModal.addEventListener('click', (e) => {
+            if (e.target === orderModal) {
+                orderModal.classList.remove('active');
+            }
+        });
+    }
 });
